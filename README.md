@@ -1,7 +1,7 @@
 # <img src="icon.svg" width="25" height="25" alt="icon"> HeliumCore
 
 ![Java](https://img.shields.io/badge/Java-17+-orange.svg)
-![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg)
+![Minecraft](https://img.shields.io/badge/Minecraft-1.21.9-green.svg)
 ![Paper](https://img.shields.io/badge/Paper-API-blue.svg)
 ![Version](https://img.shields.io/badge/Version-1.2-red.svg)
 
