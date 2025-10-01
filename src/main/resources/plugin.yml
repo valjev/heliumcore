@@ -1,0 +1,110 @@
+name: HeliumCore
+main: ru.helium.core.HeliumCore
+version: Alpha 1.2
+api-version: 1.21
+authors:
+  - valjev
+  - Helium Game Lab
+description: HeliumCore — основное ядро сервера Helium
+
+commands:
+  sup:
+    description: Сообщение модераторам
+    usage: /<command> <сообщение>
+    aliases: [s, report]
+  sethome:
+    description: Установить точку дома
+    usage: /sethome
+  home:
+    description: Телепорт домой
+    usage: /home
+  lobby:
+    description: Телепорт в лобби
+    usage: /lobby
+    aliases: [l]
+  setlobby:
+    description: Установить точку лобби
+    usage: /setlobby
+    permission: helium.admin
+  goto:
+    description: Телепорт в точку
+    usage: /goto
+    aliases: [g]
+  helium:
+    description: Перезапуск или перезагрузка конфигов Helium
+    usage: /helium <reload|restart|optime>
+    permission: helium.admin
+    permission-message: §cУ вас нет прав на использование этой команды.
+    aliases: [h]
+  hwl:
+    description: Управление вайтлистом
+    usage: /hwl <add|remove> <игрок>
+    permission: helium.admin
+  help:
+    description: Список доступных команд
+    usage: /help
+  tpa:
+    description: Запрос на телепортацию
+    usage: /tpa <игрок>|accept|decline
+  friend:
+    description: Система друзей
+    aliases: [friends, f]
+    usage: /friend <help|list|add|remove|accept|decline|tp>
+  status:
+    description: Статус сервера
+    aliases: [ping]
+    usage: /status
+  skin:
+    description: Установка скина
+    usage: /skin <set|clear>
+  coin:
+    description: Управление валютой HeliumCoin
+    aliases: [c, money]
+    usage: /coin <balance|give|take|set|economy>
+  msg:
+      description: Отправить сообщение игроку
+      usage: /msg <игрок|enable|disable>
+
+  ban:
+    description: Заблокировать игрока
+    usage: /ban <игрок> <время> <причина>
+    permission: helium.mod
+  unban:
+    description: Разблокировать игрока
+    usage: /unban <игрок>
+    permission: helium.mod
+  kick:
+    description: Кикнуть игрока
+    usage: /kick <игрок> <причина>
+    permission: helium.mod
+  mute:
+    description: Замутить игрока
+    usage: /mute <игрок> <время> <причина>
+    permission: helium.mod
+  unmute:
+    description: Убрать мут игрока
+    usage: /mute <игрок>
+    permission: helium.mod
+  clearchat:
+    description: Очистить чат
+    usage: /clearchat
+    aliases: [cc]
+    permission: helium.mod
+  gm:
+    description: Сменить режим игры
+    aliases: [gamemode]
+    permission: helium.admin
+  fly:
+    description: Включить/выключить полёт
+    permission: helium.mod
+  say:
+    description: Отправить объявление от имени администрации
+    permission: helium.mod
+
+permissions:
+  helium.admin:
+    description: Доступ к административным командам Helium
+    default: op
+  helium.mod:
+    description: Доступ к модераторским командам Helium
+    default: op

@@ -1,0 +1,43 @@
+lobby:
+  world: lobby
+  x: 735.5
+  y: 98.0
+  z: -183.5
+  yaw: 0.0
+  pitch: 0.0
+
+auth:
+  world: lobby
+  x: 705.5514238996394
+  y: 115.0
+  z: -192.51732080126575
+  yaw: -0.0014648438
+  pitch: -4.6486955
+
+goto:
+  points:
+    lobby:
+      name: Лобби
+      icon: GRASS_BLOCK
+      slot: 22
+      lore:
+        - Основное лобби
+      world: lobby
+      x: 735.5
+      y: 98.0
+      z: -183.5
+      yaw: 0.0
+      pitch: 0.0
+    world:
+      name: Иследовать мир
+      icon: ENDER_PEARL
+      slot: 31
+      lore:
+        - Пойти иследовать мир
+      type: random
+      world: survival
+    home:
+      name: Вернуться домой
+      icon: red_bed
+      slot: 49
+      enabled: true
