@@ -14,10 +14,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.*;
+import io.papermc.paper.event.player.AsyncChatEvent;
 
-
-import java.security.MessageDigest;
-import java.security.SecureRandom;
 import java.sql.SQLException;
 import java.time.Duration;
 import java.util.Base64;
@@ -194,7 +192,7 @@ public class AuthManager implements Listener {
     }
 
     @EventHandler
-    public void onChat(AsyncPlayerChatEvent event) {
+    public void onChat(AsyncChatEvent event) {
         if (isFrozen(event.getPlayer().getUniqueId())) {
             event.setCancelled(true);
         }
