@@ -29,7 +29,7 @@ commands:
   goto:
     description: Телепорт в точку
     usage: /goto
-    aliases: [g]
+    aliases: [g, go]
   helium:
     description: Перезапуск или перезагрузка конфигов Helium
     usage: /helium <reload|restart|optime>
